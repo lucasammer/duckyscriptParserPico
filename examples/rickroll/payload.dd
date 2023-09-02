@@ -1,0 +1,7 @@
+REM example payload
+REM this example will open the url to the rickroll video (on windows)
+
+DELAY 500
+RUN
+DELAY 500
+STRINGLN https://www.youtube.com/watch?v=dQw4w9WgXcQ
