@@ -19,6 +19,9 @@ If you do not want the pico to show up as a storage device, do what [this guy on
 # current state
 This is the current state of the project, every token that it supports.
 [What we're trying to get to](https://github.com/dekuNukem/duckyPad/blob/master/duckyscript_info.md#List-of-Commands)
+
+NOTICE: watch out with multiple keys as they are NOT always the same as the official duckyscript keys. If you notice a key that is not the same as the original, open an issue.
+
 ```DuckScript
 REM this is a comment
 
