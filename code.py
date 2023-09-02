@@ -315,10 +315,24 @@ def runKeys(string):
         kbd.send(Keycode.KEYPAD_PERIOD)
     elif key_string == "KP_EQUAL":
         kbd.send(Keycode.KEYPAD_EQUALS)
-    
+
     # my commands
     elif(key_string == "RUN"):
         kbd.send(Keycode.GUI, Keycode.R)
+
+def runKeysMultiple(string):
+    try:
+        topress = []
+        for i in string:
+            key = i
+            if(i == "ESC"):
+                key = "ESCAPE"
+            topress.append(getattr(Keycode, key))
+            time.sleep(delay)
+        kbd.send(*topress)
+    except:
+        print("all supported keys:")
+        print(dir(Keycode))
 
 def doPart(string):
     if(string[0] == "REM"):
@@ -340,7 +354,10 @@ def doPart(string):
         # repeat last thing again
         pass # for now
     else:
-        runKeys(string)
+        if len(string) > 1:
+            runKeysMultiple(string)
+        else:
+            runKeys(string)
 
 payload = open("payload.dd")
 payload = payload.read()
