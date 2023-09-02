@@ -1,5 +1,5 @@
 REM example payload
-REM this example will open the url to the rickroll video (on windows)
+REM this example will open a fake update screen and enter fullscreen
 
 RUN
 DELAY 500
