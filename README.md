@@ -38,11 +38,13 @@ REM sets the delay between sending characters in a string to 20ms
 REM defualt : 18ms
 DEFAULTCHARDELAY 20
 
-REM most special keys (not yet multiple)
+REM most special keys
 CONTROL
 BACKSPACE
+CONTROL SHIFT ESC
 PRINTSCREEN
 F11
+ALT F4
 REM etc.
 
 REM some commands (not from the spec)
