@@ -1,0 +1,8 @@
+REM example payload
+REM this example will open the url to the rickroll video (on windows)
+
+RUN
+DELAY 500
+STRINGLN http://fakeupdate.net/win10ue/index.html
+DELAY 1000
+F11
